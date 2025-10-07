@@ -1,0 +1,44 @@
+model:
+  yolo_model: "yolov8n.pt"  
+  confidence: 0.4
+  device: "cpu"  
+
+
+classes:
+  vehicle: [2, 3, 5, 7]  
+  person: [0]
+
+class_names:
+  0: "person"
+  2: "car"
+  3: "motorcycle"
+  5: "bus"
+  7: "truck"
+
+
+tracker:
+  max_age: 50
+  n_init: 3
+  max_iou_distance: 0.7
+  embedder: "mobilenet"
+  embedder_gpu: true
+  nn_budget: 100
+
+
+analysis:
+  counting_line_y: 400  
+  expected_direction: "right"  
+  min_track_length: 10
+
+
+video:
+  input_folder: "./videos"  
+  skip_frames: 5
+  resize_width: 1280
+  resize_height: 720
+
+
+output:
+  save_video: true
+  save_logs: true
+  display_realtime: true
