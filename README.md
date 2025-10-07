@@ -46,4 +46,5 @@
 -DeepSORT thay vì ByteTrack hay StrongSORT bởi yêu cầu cần Re-ID nên cần các mô hình có Ri-ID module như DeepSORT nhưng vẫn cần cân bằng với tốc độ.
 -Bởi mục tiêu là xử lý nhiều luồng camera nên việc xác định một ROI chung dùng cho tất cả là không khả quan, do đó sử dụng LINE để đếm; mặc dù nếu có thể dùng ROI để giới hạn phạm vi xử lý sẽ gia tăng hiệu suất đáng kể
 -Laptop hiện tại không có GPU nên việc implement thử các tính năng với GPU là hạn chế
+<img width="1919" height="1078" alt="Ảnh chụp màn hình 2025-10-04 160944" src="https://github.com/user-attachments/assets/b25d701e-01d6-480e-bcbd-0f8f12b4aa19" />
 
